@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-skills',
   imports: [CommonModule],
+  standalone: true,
   templateUrl: './skills.component.html',
   styleUrl: './skills.component.scss'
 })
