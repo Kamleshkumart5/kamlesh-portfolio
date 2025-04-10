@@ -12,13 +12,17 @@ import { HeaderComponent } from './header/header.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HeroComponent, HeaderComponent,
-    AboutComponent,
-    ProjectsComponent,
-    SkillsComponent,
-    ExperienceComponent,
-    CertificationsComponent,
-    EducationComponent],
+  imports: [RouterOutlet, HeaderComponent, 
+    
+    // HeroComponent,
+    // AboutComponent,
+    // ProjectsComponent,
+    // SkillsComponent,
+    // ExperienceComponent,
+    // CertificationsComponent,
+    // EducationComponent
+  
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
