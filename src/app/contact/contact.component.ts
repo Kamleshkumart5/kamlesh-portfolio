@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms'; // Import FormsModule
 @Component({
   selector: 'app-contact',
   imports: [CommonModule, FormsModule],
+  standalone: true,
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })

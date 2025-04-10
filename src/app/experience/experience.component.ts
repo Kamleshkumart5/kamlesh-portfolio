@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-experience',
   imports: [CommonModule],
+  standalone: true,
   templateUrl: './experience.component.html',
   styleUrl: './experience.component.scss'
 })

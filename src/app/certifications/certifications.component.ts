@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-certifications',
   imports: [CommonModule],
+  standalone: true,
   templateUrl: './certifications.component.html',
   styleUrl: './certifications.component.scss'
 })

@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common'; // Import CommonModule
 @Component({
   selector: 'app-hero',
   imports: [CommonModule],
+  standalone: true,
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.scss'
 })
