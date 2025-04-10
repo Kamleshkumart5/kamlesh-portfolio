@@ -1,0 +1,16 @@
+<section class="certifications">
+    <div class="container">
+      <h2>Certifications</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4" *ngFor="let cert of certifications">
+          <div class="card">
+            <!-- <img [src]="cert.imageUrl" class="card-img-top" [alt]="cert.name"> -->
+            <div class="card-body">
+              <h5 class="card-title">{{ cert.name }}</h5>
+              <p class="card-text">Issuer: {{ cert.issuer }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

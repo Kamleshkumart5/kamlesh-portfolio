@@ -1,0 +1,90 @@
+/* projects.component.css */
+.projects {
+  padding: 80px 20px;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #263238;
+  margin-bottom: 50px;
+}
+
+.projects .card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.projects .card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  margin: 20px;
+  flex: 1 1 100%; /* Make cards flexible */
+  max-width: 100%; /* Ensure cards fill available width */
+}
+
+.projects .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.projects .card img {
+  height: 250px;
+  object-fit: cover;
+  width: 100%; /* Ensure image fills card width */
+}
+
+.projects .card-body {
+  padding: 30px;
+}
+
+.projects .card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #263238;
+  margin-bottom: 15px;
+}
+
+.projects .card-text {
+  font-size: 1rem;
+  color: #546e7a;
+  margin-bottom: 20px;
+}
+
+.projects .card-body p:last-child {
+  margin-bottom: 0;
+}
+
+.projects .card .btn {
+  background-color: #00bcd4;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.projects .card .btn:hover {
+  background-color: #0097a7;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .projects h2 {
+    font-size: 2.5rem;
+  }
+}

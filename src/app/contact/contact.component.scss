@@ -1,0 +1,22 @@
+/* contact.component.css */
+.contact form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .contact .form-label {
+    font-weight: bold;
+    color: #444;
+  }
+  
+  .contact .form-control {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .contact textarea.form-control {
+    resize: vertical;
+  }

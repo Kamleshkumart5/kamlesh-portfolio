@@ -1,0 +1,91 @@
+/* skills.component.css */
+.skills {
+  padding: 100px 20px; /* Increased padding */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #d2e7f4; /* Consistent background */
+}
+
+.skills h2 {
+  font-size: 3.8rem; /* Larger heading */
+  font-weight: 700;
+  color: #263238; /* Darker heading color */
+  margin-bottom: 70px; /* Increased margin */
+  text-align: center;
+  letter-spacing: -1px; /* Improved letter spacing */
+}
+
+.skills .skills-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px; /* Increased gap */
+  width: 100%;
+  max-width: 1200px;
+}
+
+.skills .skill-column {
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* Increased gap */
+  flex: 1;
+}
+
+.skills .skill-category {
+  background-color: #d0e8ef;
+  border-radius: 12px; /* Smoother corners */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+  padding: 40px; /* Increased padding */
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover transition */
+}
+
+.skills .skill-category:hover {
+  transform: translateY(-8px); /* Slight lift on hover */
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15); /* Enhanced hover shadow */
+}
+
+.skills .skill-category h3 {
+  font-size: 2rem; /* Larger title */
+  font-weight: 600;
+  color: #37474f; /* Darker title color */
+  margin-bottom: 25px; /* Increased margin */
+}
+
+.skills .skill-category ul {
+  list-style: none;
+  padding: 0;
+  flex: 1;
+}
+
+.skills .skill-category li {
+  font-size: 1.2rem; /* Larger list items */
+  color: #546e7a; /* Darker list item color */
+  margin-bottom: 12px; /* Increased margin */
+  line-height: 1.8; /* Improved line height */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .skills h2 {
+    font-size: 3rem;
+    margin-bottom: 50px;
+  }
+
+  .skills .skills-grid {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .skills .skill-column {
+    gap: 30px;
+  }
+
+  .skills .skill-category {
+    padding: 30px;
+  }
+}

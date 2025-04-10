@@ -1,0 +1,37 @@
+/* education.component.css */
+.education {
+  padding: 80px 20px;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.education h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #263238;
+  margin-bottom: 50px;
+}
+
+.education h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #00bcd4;
+  margin-bottom: 10px;
+}
+
+.education p {
+  font-size: 1rem;
+  color: #546e7a;
+  margin-bottom: 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .education h2 {
+    font-size: 2.5rem;
+  }
+}

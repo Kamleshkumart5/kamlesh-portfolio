@@ -1,0 +1,13 @@
+<section class="experience">
+    <div class="container">
+      <h2>Experience</h2>
+      <div *ngFor="let exp of experiences">
+        <h3>{{ exp.company }}</h3>
+        <p>{{ exp.duration }}</p>
+        <h4>{{ exp.designation }}</h4>
+        <ul>
+          <li style="justify-content: left;" *ngFor="let resp of exp.responsibilities">{{ resp }}</li>
+        </ul>
+      </div>
+    </div>
+  </section>
