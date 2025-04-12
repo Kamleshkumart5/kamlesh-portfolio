@@ -41,7 +41,7 @@
           },
           "configurations": {
             "production": {
-              "baseHref": "kamlesh-portfolio",
+              "baseHref": "/kamlesh-portfolio/",
               "budgets": [
                 {
                   "type": "initial",
