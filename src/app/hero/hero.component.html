@@ -2,12 +2,21 @@
   <div class="hero-overlay"></div>
   <div class="container">
     <div class="hero-content">
-      <h1>{{ heroTitle }}</h1>
-      <p class="lead">{{ heroSubtitle }}</p>
-      <p>{{ heroDescription }}</p>
-      <div class="hero-actions">
-        <button class="btn btn-primary" (click)="viewProjects()">Explore My Work</button>
-        <button class="btn btn-secondary" (click)="downloadResume()">Get My Resume</button>
+      <div class="hero-text">
+        <h1>{{ heroTitle }}</h1>
+        <p class="lead">{{ heroSubtitle }}</p>
+        <p>{{ heroDescription }}</p>
+        <div class="hero-actions">
+          <button class="btn btn-primary" (click)="viewProjects()">Explore My Work</button>
+          <button class="btn btn-secondary" (click)="downloadResume()">Get My Resume</button>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="assets/passport-image.jpg" alt="Your Passport Image">
+      </div>
+      <div class="hero-contact">
+        <p>Email: {{ email }}</p>
+        <p>Phone: {{ phoneNumber }}</p>
       </div>
     </div>
   </div>

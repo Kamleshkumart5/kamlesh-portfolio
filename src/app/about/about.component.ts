@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterTestingModule } from '@angular/router/testing'; // Import RouterTestingModule
 
 @Component({
   selector: 'app-about',
-  imports: [CommonModule],
+  imports: [CommonModule,RouterTestingModule],
   standalone: true,
   templateUrl: './about.component.html',
   styleUrl: './about.component.scss'

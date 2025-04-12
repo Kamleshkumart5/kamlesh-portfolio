@@ -1,4 +1,5 @@
-/* hero.component.css */
+/* hero.component.scss */
+
 .hero {
   position: relative;
   width: 100%;
@@ -28,10 +29,33 @@
   position: relative;
   z-index: 2;
   max-width: 1200px; /* Limit container width */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .hero .hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100%;
+  width: 100%;
+}
+
+.hero .hero-text {
+  flex: 1;
   max-width: 600px; /* Limit text width for readability */
+}
+
+.hero .hero-image {
+  flex: 0 0 200px; /* Adjust width as needed */
+  text-align: right;
+}
+
+.hero .hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%; /* Circular image */
 }
 
 .hero h1 {
@@ -100,7 +124,19 @@
   }
 
   .hero .hero-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero .hero-text {
     max-width: 100%; /* Full width text on smaller screens */
+    text-align: center;
+  }
+
+  .hero .hero-image {
+    flex: 0 0 auto;
+    text-align: center;
+    margin-top: 20px;
   }
 
   .hero .hero-actions {
