@@ -1,11 +1,9 @@
 :host {
     display: block;
-    padding-top: 80px;
+    padding-top: 80px; /* Matches header height for larger screens */
 
-    /* matches the header height */
     @media (max-width: 768px) {
-        padding-top: 100px;
-        /* in case your mobile nav takes more height */
+        padding-top: 100px; /* Adjust if mobile nav has more height */
     }
 
     .header {
@@ -14,19 +12,25 @@
         left: 0;
         width: 100%;
         z-index: 1000;
-        height: 80px;
+        height: 80px; /* Default header height */
     }
 
+    /* Content wrapper, adjusts padding to match header height */
     .content-wrapper {
-        padding-top: 80px;
-        /* Matches header height */
+        padding-top: 80px; /* Matches header height for larger screens */
+
+        @media (max-width: 768px) {
+            padding-top: 100px; /* Adjust padding for mobile if needed */
+        }
     }
 
     main,
     .content-wrapper,
     .hero-section {
-        padding-top: 80px;
-        /* same as header height */
-    }
+        padding-top: 80px; /* Same as header height for larger screens */
 
+        @media (max-width: 768px) {
+            padding-top: 100px; /* Match mobile header height */
+        }
+    }
 }
