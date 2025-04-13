@@ -119,7 +119,7 @@
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .hero {
-    padding: 0 20px; /* Adjust padding for smaller screens */
+    padding: 100px 20px 0; /* Adjust padding for smaller screens */
     text-align: center; /* Center text on smaller screens */
   }
 
@@ -148,6 +148,6 @@
     align-items: center; /* Center buttons */
   }
    .hero {
-    padding-top: 60px; /*Add padding to the hero section to move its content below the header*/
+    padding-top: 120px; /*Add padding to the hero section to move its content below the header*/
   }
 }

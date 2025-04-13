@@ -1,9 +1,13 @@
 /* header.component.css */
 .header {
   background-color: #263238; /* Darker, more modern background */
+  position: fixed;
   color: #e0f2fe; /* Light blue, matching hero text */
   padding: 20px 0; /* Slightly increased padding */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Above everything */
 }
 
 .nav {
