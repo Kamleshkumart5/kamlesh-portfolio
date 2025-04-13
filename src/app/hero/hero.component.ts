@@ -30,7 +30,15 @@ export class HeroComponent {
     console.log('View experience clicked');
     // You can use Angular Router to navigate here
   }
+  viewResume() {
+    window.open('assets/resume.pdf', '_blank');
+  }
   downloadResume() {
-    window.open('docs/assets/resume.pdf', '_blank'); // Open resume in a new tab for download
+    const link = document.createElement('a');
+    link.href = 'assets/resume.pdf';
+    link.download = 'Kamlesh_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link); // Open resume in a new tab for download
   }
 }
