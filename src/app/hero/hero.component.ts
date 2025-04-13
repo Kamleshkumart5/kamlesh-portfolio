@@ -31,6 +31,6 @@ export class HeroComponent {
     // You can use Angular Router to navigate here
   }
   downloadResume() {
-    window.open('/assets/resume.pdf', '_blank'); // Open resume in a new tab for download
+    window.open('docs/assets/resume.pdf', '_blank'); // Open resume in a new tab for download
   }
 }

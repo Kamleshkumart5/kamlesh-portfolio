@@ -11,3 +11,10 @@
   <app-root></app-root>
 <script src="polyfills-FFHMD2TL.js" type="module"></script><script src="main-CCPIXITN.js" type="module"></script></body>
 </html>
+<script>
+  if (document.location.hostname.includes('github.io')) {
+    document.write('<base href="/kamlesh-portfolio/">'); // Or your repo name
+  } else {
+    document.write('<base href="/">'); // Or remove the tag entirely
+  }
+</script>
