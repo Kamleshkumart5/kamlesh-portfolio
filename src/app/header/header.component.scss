@@ -8,6 +8,7 @@
   width: 100%;
   z-index: 1000;
   height: 80px;
+  overflow: hidden;
 }
 
 .nav {
@@ -38,6 +39,10 @@
 
 .nav-item {
   margin-left: 25px;
+  display: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
 }
 
 .nav-link {
@@ -83,10 +88,15 @@
     margin-top: 10px;
     background-color: #263238;
     padding: 10px 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
   }
 
   .nav-items.show {
     display: flex;
+    max-height: 500px; // enough to reveal all items
+  overflow: visible;
   }
 
   .nav-item {
