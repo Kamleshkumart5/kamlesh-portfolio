@@ -148,6 +148,7 @@
     align-items: center; /* Center buttons */
   }
    .hero {
-    padding-top: 120px; /*Add padding to the hero section to move its content below the header*/
+    padding-top: 100px; /* Must be ≥ header height */
+    height: calc(100vh - 100px); /* So it doesn't overflow */
   }
 }
