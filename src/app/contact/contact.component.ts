@@ -19,4 +19,8 @@ export class ContactComponent {
     console.log('Form submitted:', { name: this.name, email: this.email, message: this.message });
     // You can use Angular HTTP to send the form data
   }
+  Submit(){
+    window.alert('Success!');
+  }
+  
 }
