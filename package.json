@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "build:prod": "npx ng build --configuration production --base-href=\"/kamlesh-portfolio/\"",
-    "postbuild:prod": "rm -rf docs/* && cp -r dist/kamlesh-portfolio/browser/* docs"
+    "postbuild:prod": "rm -rf docs && mkdir -p docs && cp -r dist/kamlesh-portfolio/browser/* docs"
   },
   },
   "private": true,
