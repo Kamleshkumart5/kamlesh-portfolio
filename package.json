@@ -10,7 +10,6 @@
     "build:prod": "npx ng build --configuration production --base-href=\"/kamlesh-portfolio/\"",
     "postbuild:prod": "rm -rf docs && mkdir -p docs && cp -r dist/kamlesh-portfolio/browser/* docs"
   },
-  },
   "private": true,
   "dependencies": {
     "@angular/cli": "^19.2.7",
@@ -43,3 +42,5 @@
     "typescript": "~5.7.2"
   }
 }
+
+
