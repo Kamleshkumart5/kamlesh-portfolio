@@ -1,0 +1,17 @@
+:host {
+    display: block;
+    padding-top: 80px; /* matches the header height */
+    @media (max-width: 768px) {
+        padding-top: 100px; /* in case your mobile nav takes more height */
+    }
+    .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 80px;
+}
+
+  }
+  
