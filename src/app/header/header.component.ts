@@ -19,4 +19,9 @@ export class HeaderComponent {
     { label: 'Education', link: '/education' },
     { label: 'Contact', link: '/contact' }
   ];
+  isMenuOpen = false;
+
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
 }

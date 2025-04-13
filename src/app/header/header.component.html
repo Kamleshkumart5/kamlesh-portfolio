@@ -1,12 +1,19 @@
 <header class="header">
-    <div class="container">
-      <nav class="nav">
-        <a routerLink="/" class="logo">Kamleshkumar Tiwari</a>
-        <ul class="nav-items">
-          <li class="nav-item" *ngFor="let item of navItems">
-            <a routerLink="{{ item.link }}" class="nav-link" routerLinkActive="active">{{ item.label }}</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <div class="container">
+    <nav class="nav">
+      <a routerLink="/" class="logo">Kamleshkumar Tiwari</a>
+
+      <!-- Hamburger toggle -->
+      <div class="hamburger" (click)="toggleMenu()">
+        &#9776;
+      </div>
+
+      <!-- Add dynamic class here -->
+      <ul class="nav-items" [ngClass]="{ 'show': isMenuOpen }">
+        <li class="nav-item" *ngFor="let item of navItems">
+          <a routerLink="{{ item.link }}" class="nav-link" routerLinkActive="active">{{ item.label }}</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
