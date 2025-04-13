@@ -1,5 +1,3 @@
-/* header.component.scss */
-
 .header {
   background-color: #263238;
   position: fixed;
@@ -75,6 +73,7 @@
 
   .hamburger {
     display: block;
+    align-self: flex-end;
   }
 
   .nav-items {
@@ -83,6 +82,7 @@
     width: 100%;
     margin-top: 10px;
     background-color: #263238;
+    padding: 10px 0;
   }
 
   .nav-items.show {
