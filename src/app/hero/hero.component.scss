@@ -139,8 +139,15 @@
     margin-top: 20px;
   }
 
+  .hero h1{
+        font-size: 1.8rem; /* Smaller heading size on mobile */
+  }
+
   .hero .hero-actions {
     flex-direction: column; /* Stack buttons vertically */
     align-items: center; /* Center buttons */
+  }
+   .hero {
+    padding-top: 60px; /*Add padding to the hero section to move its content below the header*/
   }
 }
