@@ -1,36 +1,25 @@
 :host {
     display: block;
-    padding-top: 80px; /* Matches header height for larger screens */
-
-    @media (max-width: 768px) {
-        padding-top: 100px; /* Adjust if mobile nav has more height */
-    }
-
-    .header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 1000;
-        height: 80px; /* Default header height */
-    }
-
-    /* Content wrapper, adjusts padding to match header height */
+  
     .content-wrapper {
-        padding-top: 80px; /* Matches header height for larger screens */
-
-        @media (max-width: 768px) {
-            padding-top: 100px; /* Adjust padding for mobile if needed */
-        }
+      padding-top: 80px;
+  
+      @media (max-width: 768px) {
+        padding-top: 100px;
+      }
     }
-
-    main,
-    .content-wrapper,
-    .hero-section {
-        padding-top: 80px; /* Same as header height for larger screens */
-
-        @media (max-width: 768px) {
-            padding-top: 100px; /* Match mobile header height */
-        }
-    }
-}
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+  }
+  
+  html, body {
+  
+    height: 100%;
+    width: 100%;
+  }
+  
+  

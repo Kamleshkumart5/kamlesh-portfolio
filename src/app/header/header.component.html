@@ -3,15 +3,17 @@
     <nav class="nav">
       <a routerLink="/" class="logo">Kamleshkumar Tiwari</a>
 
-      <!-- Hamburger toggle -->
-      <div class="hamburger" (click)="toggleMenu()">
+      <button class="hamburger" (click)="toggleMenu()" aria-label="Toggle navigation">
         &#9776;
-      </div>
+      </button>
 
-      <!-- Dynamic Nav List -->
       <ul class="nav-items" [ngClass]="{ 'show': isMenuOpen }">
         <li class="nav-item" *ngFor="let item of navItems">
-          <a routerLink="{{ item.link }}" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+          <a 
+            routerLink="{{ item.link }}" 
+            class="nav-link" 
+            routerLinkActive="active" 
+            [routerLinkActiveOptions]="{ exact: true }">
             {{ item.label }}
           </a>
         </li>

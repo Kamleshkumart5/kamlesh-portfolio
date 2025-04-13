@@ -10,6 +10,7 @@ import { RouterModule } from '@angular/router'; // Import RouterModule
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
+  isMenuOpen = false;
   navItems = [
     { label: 'About', link: '/about' },
     { label: 'Projects', link: '/projects' },
@@ -19,7 +20,7 @@ export class HeaderComponent {
     { label: 'Education', link: '/education' },
     { label: 'Contact', link: '/contact' }
   ];
-  isMenuOpen = false;
+  
 
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;

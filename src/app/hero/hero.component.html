@@ -2,6 +2,8 @@
   <div class="hero-overlay"></div>
   <div class="container">
     <div class="hero-content">
+      
+      <!-- Hero Text (unchanged) -->
       <div class="hero-text">
         <p class="lead">{{ heroSubtitle }}</p>
         <p>{{ heroDescription }}</p>
@@ -13,16 +15,18 @@
         </div>
       </div>
 
+      <!-- Hero Image + Contact Info grouped together -->
       <div class="hero-image">
         <img src="assets/passport-image.jpg" alt="Your Passport Image">
+
+        <div class="hero-contact">
+          <p><strong>Name:</strong> {{ heroTitle }}</p>
+          <p>Email:Kamleshkumart5&#64;gmail.com</p>
+          <p><strong>Phone:</strong> {{ phoneNumber }}</p>
+          <p><strong>Location:</strong> {{ Location }}</p>
+        </div>
       </div>
 
-      <div class="hero-contact">
-        <p>Name: {{ heroTitle }}</p>
-        <p>Email: {{ email }}</p>
-        <p>Phone: {{ phoneNumber }}</p>
-        <p>Location: {{ Location }}</p>
-      </div>
     </div>
   </div>
 </section>

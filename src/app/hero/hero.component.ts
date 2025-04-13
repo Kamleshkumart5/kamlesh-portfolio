@@ -10,7 +10,7 @@ import { Router } from '@angular/router'; // Import Router
   styleUrl: './hero.component.scss'
 })
 export class HeroComponent {
-  heroTitle = 'Kamleshkumar Satishkumar Tiwari';
+  heroTitle = 'Kamleshkumar Tiwari';
   heroSubtitle = 'Technical Leader & Innovator';
   email = 'kamleshkumart5@gmail.com';
   phoneNumber = '9653410690';
