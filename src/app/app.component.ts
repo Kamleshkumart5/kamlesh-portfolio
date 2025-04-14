@@ -9,10 +9,11 @@ import { CertificationsComponent } from './certifications/certifications.compone
 import { EducationComponent } from './education/education.component';
 import { ContactComponent } from './contact/contact.component';
 import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from "../footer/footer.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HeaderComponent],
+  imports: [RouterOutlet, HeaderComponent, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

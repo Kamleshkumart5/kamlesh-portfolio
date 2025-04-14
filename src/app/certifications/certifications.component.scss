@@ -8,6 +8,8 @@
   justify-content: center;
   align-items: center;
   margin-top: 60px;
+  padding-right:10% ;
+
 }
 
 .certifications h2 {
@@ -15,6 +17,7 @@
   font-weight: 600;
   color: #263238;
   margin-bottom: 50px;
+  padding-left: 7%;
 }
 
 .certifications .card-container {
@@ -24,6 +27,7 @@
   gap: 20px;
   max-width: 1200px;
   width: 100%;
+  
 }
 
 .certifications .card {
@@ -35,6 +39,7 @@
   max-width: 750px;
   margin: 20px;
   width: 100%;
+  
 }
 
 .certifications .card:hover {
@@ -51,6 +56,7 @@
 
 .certifications .card-body {
   padding: 30px;
+  
 }
 
 .certifications .card-title {

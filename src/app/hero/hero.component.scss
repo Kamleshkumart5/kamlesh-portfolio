@@ -75,8 +75,18 @@
   display: flex;
   gap: 15px;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
-
+.action-btn {
+  flex: 1 1 200px; // Allow buttons to grow, shrink, min 200px
+  height: 50px; // Fixed height for all
+  max-width: 250px; // Optional: keep buttons from stretching too much
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  white-space: nowrap;
+}
 .btn {
   padding: 12px 24px;
   font-size: 1rem;
