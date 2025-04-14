@@ -37,6 +37,13 @@ export class ProjectsComponent {
       technologies: ['.NET Core', 'Angular', 'MySQL', 'Entity Framework'],
       imageUrl: 'assets/breakfast-order.jpg',
       link: '/breakfast-order' // Angular Route to detail
+    },
+    {
+      title: 'Personal Portfolio Website',
+      description: 'Fully responsive personal portfolio website built using Angular, HTML, CSS, and TypeScript. Hosted live via GitHub Pages.',
+      technologies: ['Angular', 'HTML', 'CSS', 'TypeScript'],
+      imageUrl: 'assets/Website.jpg',
+      link: '/website' // Angular Route to detail
     }
   ];
 }
